@@ -1,0 +1,107 @@
+* {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+        }
+        
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background-color: #f0f0f0;
+        }
+        
+        .calculator {
+            background-color: #e0e0e0;
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+            width: 320px;
+        }
+        
+        .display-container {
+            position: relative;
+            margin-bottom: 15px;
+        }
+        
+        .display {
+            background-color: #1a1a1a;
+            color: #ffffff;
+            font-size: 20px; /* Reduced font size */
+            padding: 10px 15px; /* Reduced padding */
+            text-align: right;
+            border-radius: 5px;
+            overflow: hidden;
+            min-height: 45px; /* Reduced height */
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+        }
+        
+        .mini-display {
+            position: absolute;
+            top: -25px; /* Moved up */
+            right: 0;
+            background-color: #1a1a1a;
+            color: #ffffff;
+            font-size: 24px; /* Increased font size */
+            padding: 5px 10px;
+            border-radius: 5px;
+            width: 100%; /* Full width */
+            text-align: right;
+            min-height: 30px;
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+        }
+        
+        .buttons {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 10px;
+        }
+        
+        button {
+            padding: 15px;
+            font-size: 18px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: all 0.2s;
+        }
+        
+        button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 3px 5px rgba(0, 0, 0, 0.2);
+        }
+        
+        button:active {
+            transform: translateY(0);
+        }
+        
+        .function-btn {
+            background-color: #4CAF50;
+            color: white;
+        }
+        
+        .operator-btn {
+            background-color: #2E7D32;
+            color: white;
+        }
+        
+        .number-btn {
+            background-color: #333333;
+            color: white;
+        }
+        
+        .equals-btn {
+            background-color: #4CAF50;
+            color: white;
+            grid-column: span 2;
+        }
+        
+        .zero-btn {
+            grid-column: span 2;
+        }
